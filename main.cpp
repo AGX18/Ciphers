@@ -37,7 +37,7 @@ char AffineEncryptCharacter(char c, int a, int b) {
 }
 
 // Function to encrypt a string
-std::string AffineCipher(std::string message, int a, int b) {
+std::string AffineCipher(std::string &message, int a, int b) {
     std::string encryptedMessage;
     for (char c : message) {
         encryptedMessage += AffineEncryptCharacter(c, a, b);
